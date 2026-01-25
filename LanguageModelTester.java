@@ -18,7 +18,7 @@ public class LanguageModelTester {
                 break;
             case "generate":
                 result = testGenerate();
-                break;
+                break;  
             case "all":
                 result = testCalculateProbabilities();
                 result = result && testGetRandomChar();
@@ -152,7 +152,7 @@ public class LanguageModelTester {
     public static boolean testGenerate() {
         LanguageModel languageModel = new LanguageModel(7,20);
         languageModel.train("originofspecies.txt");
-        String generatedText = languageModel.generate("Natural", 172);
+        String generatedText = languageModel.generate("Natural", 179);
         String expectedGeneratedText = "Natural selection, how is it possible, generally much changed\n"+
         "simultaneous rotation, when the importance of Batrachians, 393.\n"+
         "  Batrachians (frogs, toads, newts) have to modified ";
